@@ -1,0 +1,5 @@
+Installer Version:
+
+1.0.0.ub1604lts "Panthera tigris"
+
+ONLY FOR OPENSTACK RELEASE 17 "QUEENS"

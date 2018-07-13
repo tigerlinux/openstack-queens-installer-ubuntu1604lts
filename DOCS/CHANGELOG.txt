@@ -1,0 +1,10 @@
+1.0.0.ub1604lts - July 13, 2018
+
+- Production ready release for Ubuntu 16.04.lts
+- All modules adapted for OpenStack release 17 "Queens"
+- Removed uuid and pki as token options for Keystone.
+  Only "fernet" is used now.
+- Added selectable FWaaS installable version for v1 and v2
+  (controlled on main config).
+- DVR is now optional (controlled on main config).
+- General updates on notes and documentation.
