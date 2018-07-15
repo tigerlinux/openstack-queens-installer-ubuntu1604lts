@@ -130,8 +130,8 @@ fi
 # Keystone
 if [ $keystoneinstall == "yes" ]
 then
-	iptables -A INPUT -s $osprivatenetwork -p tcp -m multiport --dports 5000,11211,5000 -j ACCEPT
-	iptables -A INPUT -s $keystoneclientnetwork -p tcp -m multiport --dports 5000,5000 -j ACCEPT
+	iptables -A INPUT -s $osprivatenetwork -p tcp -m multiport --dports 5000,11211,35357 -j ACCEPT
+	iptables -A INPUT -s $keystoneclientnetwork -p tcp -m multiport --dports 5000,35357 -j ACCEPT
 fi
 
 #Swift

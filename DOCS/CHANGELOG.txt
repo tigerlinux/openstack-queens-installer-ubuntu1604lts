@@ -1,3 +1,9 @@
+1.0.1.ub1604lts - July 15, 2018
+
+- Minor changes on deprecated config options.
+- All Keystone endpoints set to port 5000 on all
+  modules. Port 35357 is still available but unused.
+
 1.0.0.ub1604lts - July 13, 2018
 
 - Production ready release for Ubuntu 16.04.lts

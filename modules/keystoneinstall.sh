@@ -214,7 +214,7 @@ esac
 #crudini --set /etc/keystone/keystone.conf paste_deploy config_file /etc/keystone/keystone-paste.ini
 
 crudini --set /etc/keystone/keystone.conf database retry_interval 10
-crudini --set /etc/keystone/keystone.conf database idle_timeout 3600
+crudini --set /etc/keystone/keystone.conf database connection_recycle_time 3600
 crudini --set /etc/keystone/keystone.conf database min_pool_size 1
 crudini --set /etc/keystone/keystone.conf database max_pool_size 10
 crudini --set /etc/keystone/keystone.conf database max_retries 100

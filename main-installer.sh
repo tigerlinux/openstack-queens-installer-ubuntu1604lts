@@ -5,8 +5,8 @@
 # E-Mail: TigerLinux@Gmail.com
 #
 # Main Installer Script
-# Version: 1.0.0.ub1604lts "Panthera tigris"
-# July 13, 2018
+# Version: 1.0.1.ub1604lts "Panthera tigris"
+# July 15, 2018
 #
 
 PATH=$PATH:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
@@ -75,7 +75,7 @@ case $1 in
 	echo "Flavor: OpenStack QUEENS for Ubuntu 16.04lts"
 	echo "Made by: Reynaldo R. Martinez P."
 	echo "E-Mail: TigerLinux@Gmail.com"
-	echo "Version 1.0.0.ub1604lts \"Panthera tigris\" - July 13, 2018"
+	echo "Version 1.0.1.ub1604lts \"Panthera tigris\" - July 15, 2018"
 	echo ""
 	echo "I'll verify all requiremens"
 	echo "If any requirement is not met, I'll stop and inform what's missing"

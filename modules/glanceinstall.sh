@@ -132,14 +132,14 @@ crudini --set /etc/glance/glance-api.conf DEFAULT delayed_delete False
 crudini --set /etc/glance/glance-api.conf DEFAULT scrub_time 43200
  
 crudini --set /etc/glance/glance-api.conf database retry_interval 10
-crudini --set /etc/glance/glance-api.conf database idle_timeout 3600
+crudini --set /etc/glance/glance-api.conf database connection_recycle_time 3600
 crudini --set /etc/glance/glance-api.conf database min_pool_size 1
 crudini --set /etc/glance/glance-api.conf database max_pool_size 10
 crudini --set /etc/glance/glance-api.conf database max_retries 100
 crudini --set /etc/glance/glance-api.conf database pool_timeout 10
 
 crudini --set /etc/glance/glance-registry.conf database retry_interval 10
-crudini --set /etc/glance/glance-registry.conf database idle_timeout 3600
+crudini --set /etc/glance/glance-registry.conf database connection_recycle_time 3600
 crudini --set /etc/glance/glance-registry.conf database min_pool_size 1
 crudini --set /etc/glance/glance-registry.conf database max_pool_size 10
 crudini --set /etc/glance/glance-registry.conf database max_retries 100
@@ -190,7 +190,6 @@ crudini --set /etc/glance/glance-registry.conf DEFAULT log_file /var/log/glance/
 crudini --set /etc/glance/glance-registry.conf DEFAULT backlog 4096
 crudini --set /etc/glance/glance-registry.conf DEFAULT use_syslog False
  
-crudini --set /etc/glance/glance-registry.conf DEFAULT sql_idle_timeout 3600
 crudini --set /etc/glance/glance-registry.conf DEFAULT api_limit_max 1000
 crudini --set /etc/glance/glance-registry.conf DEFAULT limit_param_default 25
  

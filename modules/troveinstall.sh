@@ -129,11 +129,11 @@ do
 	case $dbflavor in
 	"mysql")
 		crudini --set $myconffile database connection mysql+pymysql://$trovedbuser:$trovedbpass@$dbbackendhost:$mysqldbport/$trovedbname
-		crudini --set $myconffile database idle_timeout 3600
+		crudini --set $myconffile database connection_recycle_time 3600
 		;;
 	"postgres")
 		crudini --set $myconffile database connection postgresql+psycopg2://$trovedbuser:$trovedbpass@$dbbackendhost:$psqldbport/$trovedbname
-		crudini --set $myconffile database idle_timeout 3600
+		crudini --set $myconffile database connection_recycle_time 3600
 	;;
 	esac
  
