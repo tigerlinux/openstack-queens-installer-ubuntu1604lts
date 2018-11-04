@@ -379,6 +379,7 @@ case $consoleflavor in
 	crudini --set /etc/nova/nova.conf vnc novncproxy_port 6080
 	# crudini --set /etc/nova/nova.conf vnc vncserver_listen $nova_computehost
 	crudini --set /etc/nova/nova.conf vnc server_listen $nova_computehost
+	crudini --set /etc/nova/nova.conf vnc server_proxyclient_address $nova_computehost
 	crudini --set /etc/nova/nova.conf vnc keymap $vnc_keymap
 	crudini --del /etc/nova/nova.conf spice html5proxy_base_url > /dev/null 2>&1
 	crudini --del /etc/nova/nova.conf spice server_listen > /dev/null 2>&1
@@ -400,6 +401,7 @@ case $consoleflavor in
 	crudini --set /etc/nova/nova.conf DEFAULT novnc_enabled False > /dev/null 2>&1
 	crudini --set /etc/nova/nova.conf spice html5proxy_base_url "http://$spiceserver_controller_address:6082/spice_auto.html"
 	crudini --set /etc/nova/nova.conf spice server_listen $nova_computehost
+	crudini --set /etc/nova/nova.conf spice server_proxyclient_address $nova_computehost
 	crudini --set /etc/nova/nova.conf spice html5proxy_port 6082
 	crudini --set /etc/nova/nova.conf spice server_proxyclient_address $nova_computehost
 	crudini --set /etc/nova/nova.conf spice enabled True

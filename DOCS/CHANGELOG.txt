@@ -1,3 +1,7 @@
+1.0.2.ub1604lts - November 04 2018
+
+- Minor correction on nova compute install module.
+
 1.0.1.ub1604lts - July 15, 2018
 
 - Minor changes on deprecated config options.
